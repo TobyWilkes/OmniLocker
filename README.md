@@ -1,6 +1,7 @@
 # OmniLocker
 A storage / fabricator mod for Subnautica.
 - Removes the need to have items for crafting directly in your inventory, similar to Subnautica 2 EarlyAccess.
+- Allows base building with the Habitat builder from nearby container resources.
 - Checks life pod containers, portable containers and various other container types.
 - Adds crafting UI indicating when local containers will be used for building.
 
