@@ -45,14 +45,9 @@
 	<Target Name="CopyToDist" AfterTargets="Build">
 		<MakeDir Directories="$(ProjectDir)dist\BepInEx\plugins\OmniLocker" />
 
-		<Copy
-		  SourceFiles="$(TargetDir)OmniLocker.dll"
-		  DestinationFolder="$(ProjectDir)dist\BepInEx\plugins\OmniLocker" />
+		<Copy SourceFiles="$(TargetDir)OmniLocker.dll" DestinationFolder="$(ProjectDir)dist\BepInEx\plugins\OmniLocker" />
 
-		<Copy
-		  SourceFiles="$(TargetDir)OmniLocker.pdb"
-		  DestinationFolder="$(ProjectDir)dist\BepInEx\plugins\OmniLocker"
-		  Condition="Exists('$(TargetDir)OmniLocker.pdb')" />
+		<Copy SourceFiles="$(TargetDir)OmniLocker.pdb" DestinationFolder="$(ProjectDir)dist\BepInEx\plugins\OmniLocker" Condition="Exists('$(TargetDir)OmniLocker.pdb')" />
 	</Target>
 
 </Project>
