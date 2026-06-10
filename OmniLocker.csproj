@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
@@ -42,16 +42,16 @@
 		</Reference>
 	</ItemGroup>
 
-	<Target Name="CopyToRelease" AfterTargets="Build">
-		<MakeDir Directories="$(ProjectDir)release\BepInEx\plugins\OmniLocker" />
+	<Target Name="CopyToDist" AfterTargets="Build">
+		<MakeDir Directories="$(ProjectDir)dist\BepInEx\plugins\OmniLocker" />
 
 		<Copy
 		  SourceFiles="$(TargetDir)OmniLocker.dll"
-		  DestinationFolder="$(ProjectDir)release\BepInEx\plugins\OmniLocker" />
+		  DestinationFolder="$(ProjectDir)dist\BepInEx\plugins\OmniLocker" />
 
 		<Copy
 		  SourceFiles="$(TargetDir)OmniLocker.pdb"
-		  DestinationFolder="$(ProjectDir)release\BepInEx\plugins\OmniLocker"
+		  DestinationFolder="$(ProjectDir)dist\BepInEx\plugins\OmniLocker"
 		  Condition="Exists('$(TargetDir)OmniLocker.pdb')" />
 	</Target>
 

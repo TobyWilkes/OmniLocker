@@ -1,8 +1,7 @@
 bin/
 obj/
-
-release/**/*.dll
-release/**/*.pdb
+dist/**/*.dll
+dist/**/*.pdb
 
 
 ## Ignore Visual Studio temporary files, build results, and
@@ -26,8 +25,6 @@ mono_crash.*
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
 x64/
 x86/
 [Ww][Ii][Nn]32/
